@@ -1,0 +1,28 @@
+﻿@model Person 
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+
+
+<form asp-controller="People" asp-action="AddPerson" method="post">
+    <label for="UserID">UserID:</label>
+    <input asp-for="UserID" />
+    <br />
+    <label for="City">City:</label>
+    <input asp-for="City" />
+    <br />
+    <label for="State">State:</label>
+    <input asp-for="State" />
+    <br />
+    <label for="Zip">Zip:</label>
+    <input asp-for="Zip" />
+    <input type="submit" asp-action="NewUser" />
+</form>
+
+
+
